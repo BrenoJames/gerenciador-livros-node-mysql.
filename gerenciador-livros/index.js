@@ -26,7 +26,7 @@ app.post('/books/insertbook', (req, res) => {
         return res.send("Erro: O título e a quantidade de páginas são obrigatórios!")
     }
   
-    // Ajuste nos placeholders: ?? para colunas, ? para valores
+
     const sql = `INSERT INTO books (??, ??) VALUES (?, ?)`
     const data = ['title', 'pageqty', title, pageqty]
 
@@ -112,7 +112,6 @@ app.post('/books/remove/:id', (req, res) => {
     })
 })
 
-// Iniciar servidor - Fora de qualquer callback para garantir que não feche
 app.listen(3000, () => {
     console.log('Servidor rodando na porta 3000!')
 })
