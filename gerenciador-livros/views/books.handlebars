@@ -1,0 +1,18 @@
+<h1>Livros disponiveis:</h1>
+<div class="books-container">
+    <a href="/">Adicionar livro</a>
+    {{#each books}}
+        <div>
+            <span>#{{this.id}} - <strong>{{this.title}}</strong> - {{this.pageqty}} páginas</span>
+            
+            <div class="actions">
+                <a href="/books/{{this.id}}">Detalhes</a>
+                <form action="/books/remove/{{this.id}}" method="POST">
+                    <!-- Adicionei a class="btn-delete" aqui -->
+                    <input type="submit" value="Remover" class="btn-delete">
+
+                </form>
+            </div>
+        </div>
+    {{/each}}
+</div>

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com');
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+#navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #6366f1;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#navbar ul li a:hover {
+    color: #4338ca;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.form, .books-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+}
+
+.form-control label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+    color: #475569;
+}
+
+.form-control input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.form-control input:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #6366f1;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #4f46e5;
+    transform: translateY(-1px);
+}
+
+.books-container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f1f5f9;
+    padding: 15px 0;
+}
+
+.books-container div:last-child {
+    border-bottom: none;
+}
+
+.books-container a {
+    color: #6366f1;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#book-page a {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #64748b;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+#book-page .container {
+    text-align: center;
+}
+
+.actions {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adicionei apenas o gap para não ficarem grudados */
+}
+
+/* Pequeno ajuste para o botão de remover não ficar com 100% de largura na lista */
+.actions form input[type="submit"] {
+    width: auto;
+    padding: 8px 16px;
+    margin-top: 0;
+}
+
+/* Estilo específico para o botão de remover */
+.btn-delete {
+    background-color: #ef4444 !important; /* Vermelho moderno */
+    width: auto !important;             /* Não ocupa a linha toda */
+    margin-top: 0 !important;           /* Alinha com o botão de editar */
+    padding: 8px 16px !important;       /* Tamanho menor para a lista */
+}
+
+.btn-delete:hover {
+    background-color: #dc2626 !important; /* Vermelho mais escuro no hover */
+}
+
