@@ -19,4 +19,4 @@ Um sistema completo de **CRUD** (Create, Read, Update, Delete) desenvolvido para
 ## 📦 Como rodar este projeto
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com
+   git clone [https://github.com](https://github.com/BrenoJames/gerenciador-livros-node-mysql./tree/main/gerenciador-livros)
